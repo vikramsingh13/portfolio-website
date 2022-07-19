@@ -13,6 +13,8 @@ body {
 	color: #00458B;
 }
 
+
+
 a{
 	text-decoration: none;
 }
@@ -21,6 +23,14 @@ a, a:visited, a:hover, a:active{
 	color: inherit;
 }
 
+ul{
+	list-style-type: none;
+}
+
+img{
+	width: 200px;
+	height: 200xp;
+}
 
 .max-width{
 	max-width:  1300px;
@@ -50,7 +60,6 @@ a, a:visited, a:hover, a:active{
 }
 
 .navbar .menu li{
-	list-style: none;
 	display: inline-block;
 }
 
@@ -117,5 +126,23 @@ footer{
 
 #about-container{
 	width: 60%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
+#projects-container{
+	width: 60%;
+	display: grid;
+	gap: 25px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.projects{
+	border: 2px solid #00458B;
+	
+}
+
+.projects-skills{
+	padding: 0;
+	
+}
