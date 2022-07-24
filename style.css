@@ -141,6 +141,11 @@ section{
 	grid-template-columns: 1fr 2fr;
 }
 
+#about-container h2{
+	width: 80%;
+	text-align: left;
+}
+
 #projects-container{
 	width: 60%;
 	display: grid;
