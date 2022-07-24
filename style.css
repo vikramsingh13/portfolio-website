@@ -82,12 +82,6 @@ section{
 	background-color: #af5539; /*clay brown*/
 }
 
-footer{
-	position: fixed;
-	bottom: 0;
-	right: 0;
-}
-
 .text-container{
 	padding: 50px;
 	background-color: #043e6d; /*dark blue*/
@@ -136,6 +130,11 @@ footer{
 	font-size: 24px;
 }
 
+.socials i {
+	padding: 20px;
+	font-size: 48px;
+}
+
 #about-container{
 	width: 60%;
 	display: grid;
@@ -158,4 +157,34 @@ footer{
 .projects-skills{
 	padding: 0;
 	
+}
+
+.projects .code i {
+	padding: 10px 20px;
+	font-size: 24px;
+}
+
+#resume-container{
+	padding: 20px 50px;
+}
+
+#resume-image{
+	width: 60%;
+	border-radius: 10px;
+}
+
+#contact-section{
+}
+
+#contact-form-image{
+	width: 60%;
+	border-radius: 10px;
+}
+
+footer{
+	background: #043e6d; //dark blue
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
