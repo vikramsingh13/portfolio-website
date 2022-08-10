@@ -102,9 +102,6 @@ section{
 	border-radius: 10px;
 }
 
-#home-section{
-	
-}
 
 #home-bg{
 	background-image: url('./images/home-background.jpg');
@@ -150,13 +147,9 @@ section{
 
 #about-container{
 	width: 60%;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-}
-
-#about-container h2{
-	width: 80%;
-	text-align: left;
+	display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 #projects-container{
