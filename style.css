@@ -162,17 +162,20 @@ section{
 .projects-card{
 	border: 2px solid #fabe69;
 	border-radius: 10px;
-	
 }
 
-.projects-skills{
-	padding: 0;
-	
+.projects-card>*{
+    margin: 10px;
 }
 
-.projects .code i {
-	padding: 10px 20px;
+.code i {
+	padding: 10px;
 	font-size: 24px;
+}
+
+.projects-skills>*{
+	padding: 5px;
+	
 }
 
 #resume-container{
