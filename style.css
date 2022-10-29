@@ -196,7 +196,7 @@ section{
 }
 
 footer{
-	background: #043e6d; //dark blue
+	background: #043e6d; /*dark blue*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
