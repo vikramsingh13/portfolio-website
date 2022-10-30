@@ -1,11 +1,17 @@
 $(function(){
-    //todo fix numbers for navbar highlight
 	//heights of different sections of the index
-	$homeHeight = 0;
-	$aboutHeight = $("#about-section").position().top;
-	$projectsHeight = $("#projects-section").position().top;
-	$resumeHeight = $("#resume-section").position().top;
-	$contactHeight = $("#contact-section").position().top;
+	$homeTop = 0;
+	$aboutTop = $("#about-section").position().top;
+	$projectsTop = $("#projects-section").position().top;
+	$resumeTop = $("#resume-section").position().top;
+	$contactTop = $("#contact-section").position().top;
+
+    $homeBottom = $("#home-section").height();
+    $aboutBottom = $aboutTop + $("#about-section").height;
+    $projectsBottom = $projectsTop + $("#about-section").height;
+    $resumeBottom = $resumeTop + $("#about-section").height;
+    $contactBottom = $contactTop + $("#about-section").height;
+
 	//navbar menu items
 	$menuHome = $("#menu-home");
 	$menuAbout = $("#menu-about");
@@ -18,7 +24,7 @@ $(function(){
 
 	//when user scrolls
 	$(document).scroll(function(){
-		if($(window).scrollTop() >= $contactHeight){
+		if($(window).scrollTop() >= $contactTop || $(window).scrollTop() <= $contactBottom){
 			//remove highlight from previously assigned element
 			$highlightedMenuElement.removeClass("menu-highlight");
 			//this element becomes the new highlighted element
@@ -26,17 +32,17 @@ $(function(){
 			//highlight is added to the currently highlighted element
 			$menuContact.addClass("menu-highlight");
 			
-		} else if($(window).scrollTop() >= $resumeHeight) {
+		} else if($(window).scrollTop() >= $resumeTop || $(window).scrollTop() <= $resumeBottom) {
 			$highlightedMenuElement.removeClass("menu-highlight");
 			$highlightedMenuElement = $menuResume;
 			$menuResume.addClass("menu-highlight");
 
-		} else if($(window).scrollTop() >= $projectsHeight) {
+		} else if($(window).scrollTop() >= $projectsTop || $(window).scrollTop() >= $projectsBottom) {
 			$highlightedMenuElement.removeClass("menu-highlight");
 			$highlightedMenuElement = $menuProjects;
 			$menuProjects.addClass("menu-highlight");
 
-		} else if($(window).scrollTop() >= $aboutHeight) {
+		} else if($(window).scrollTop() >= $aboutTop || $(window).scrollTop() >= $aboutBottom) {
 			$highlightedMenuElement.removeClass("menu-highlight");
 			$highlightedMenuElement = $menuAbout;
 			$menuAbout.addClass("menu-highlight");

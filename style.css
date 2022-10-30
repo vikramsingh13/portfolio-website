@@ -98,6 +98,7 @@ section{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+    flex-wrap: wrap;
 }
 
 .text-container{
@@ -131,7 +132,6 @@ section{
 
 #home-container{
 	width: 60%;	
-
 }
 
 #home-container>h1{
@@ -147,11 +147,19 @@ section{
 	font-size: 48px;
 }
 
+#about-section{
+    height: 80vh;
+}
 #about-container{
 	width: 60%;
 	display: flex;
     text-align: center;
     justify-content: center;
+    
+}
+
+#projects-section{
+    height: 150vh;
 }
 
 #projects-container{
@@ -170,6 +178,9 @@ section{
 .projects-card>*{
     margin: 10px;
 }
+.projects-card img{
+    border-radius: 10px;
+}
 
 .code i {
 	padding: 10px;
@@ -180,7 +191,8 @@ section{
 	padding: 5px;
 	
 }
-
+#resume-section{
+}
 #resume-container{
 	padding: 20px 50px;
 }
