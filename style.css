@@ -5,6 +5,10 @@ secondary: #fabe69; //clay carrot
 tertiary: #af5539; //clay brown
 #fff; //white for text
 
+new palette
+#14213d //darkblue
+#fca311 golden orange
+
 //light blue rgba(153, 221, 255, 0.3)
 //aqua green rgba(63, 210, 199, 0.3)
 */
@@ -15,6 +19,7 @@ body {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
+    background-color: #14213d;
 }
 
 
@@ -50,8 +55,9 @@ img{
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #043e6d;
+	background-color: #14213d;
 	font-family: Arial, sans-serif;
+    border-bottom: 1px solid #fca311;
 }
 .navbar .navbar-container{
 	display: flex;
@@ -82,8 +88,8 @@ img{
 }
 
 .menu-highlight{
-	border-bottom: 5px solid #fabe69; /*clay carrot */
-	background-color: rgba(250, 190, 105, .6); /*claw carrot rgba*/
+	border-bottom: 5px solid #fca311; /*golden orange*/
+	background-color: rgba(252, 163, 17, .6); /*golden orange rgba*/
 }
 
 section{
@@ -92,21 +98,18 @@ section{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #af5539; /*clay brown*/
 }
 
 .text-container{
 	padding: 50px;
-	background-color: #043e6d; /*dark blue*/
+	background-color: #fca311; /*golden orange*/
 	display: inline-block;
 	border-radius: 10px;
 }
 
-
+/*legacy bg*/
+/*
 #home-bg{
-	background-image: url('./images/home-background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
 	width: 100%;
 	height: 100vh;
 	position: absolute;
@@ -115,9 +118,7 @@ section{
 	z-index: -2;
 	opacity: 0.3;
 }
-
 #home-bg-filter{
-	background-color: #af5539;
 	width: 100%;
 	height: 100vh;
 	position: absolute;
@@ -126,6 +127,7 @@ section{
 	z-index: -1;
 	opacity: 0.5;
 }
+*/
 
 #home-container{
 	width: 60%;	
@@ -157,11 +159,12 @@ section{
 	display: grid;
 	gap: 25px;
 	grid-template-columns: 1fr 1fr;
+    background-color: #14213d;
 }
 
 .projects-card{
-	border: 2px solid #fabe69;
 	border-radius: 10px;
+    background-color: #fca311;
 }
 
 .projects-card>*{
@@ -196,9 +199,13 @@ section{
 }
 
 footer{
-	background: #043e6d; /*dark blue*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+#footer-container{
+    width: 100%;
+    border-radius: 0;
 }

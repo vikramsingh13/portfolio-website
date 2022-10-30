@@ -1,5 +1,5 @@
 $(function(){
-
+    //todo fix numbers for navbar highlight
 	//heights of different sections of the index
 	$homeHeight = 0;
 	$aboutHeight = $("#about-section").position().top;
