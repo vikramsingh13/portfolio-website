@@ -15,11 +15,11 @@ $(function(){
     */
 
 	//navbar menu items
-	$menuHome = $("#menu-home");
-	$menuAbout = $("#menu-about");
-	$menuProjects = $("#menu-projects");
-	$menuResume = $("#menu-resume");
-	$menuContact = $("#menu-contact");
+	$menuHome = $("#menu-home>a");
+    $menuAbout = $("#menu-about>a");
+	$menuProjects = $("#menu-projects>a");
+	$menuResume = $("#menu-resume>a");
+	$menuContact = $("#menu-contact>a");
 	//will be used to identify highlighted navbar menu element;
 	$highlightedMenuElement = $menuHome;
 
@@ -31,31 +31,31 @@ $(function(){
 	$(document).scroll(function(){
 		if($contactTop <= $(window).scrollTop() + $wInnerHeight){
             //remove highlight from previously assigned element
-			$highlightedMenuElement.removeClass("menu-highlight");
+			$highlightedMenuElement.removeClass("active");
 			//this element becomes the new highlighted element
 			$highlightedMenuElement = $menuContact;
 			//highlight is added to the currently highlighted element
-			$menuContact.addClass("menu-highlight");
+			$menuContact.addClass("active");
 			
 		} else if($resumeTop <= $(window).scrollTop() + $wInnerHeight) {
-			$highlightedMenuElement.removeClass("menu-highlight");
+			$highlightedMenuElement.removeClass("active");
 			$highlightedMenuElement = $menuResume;
-			$menuResume.addClass("menu-highlight");
+			$menuResume.addClass("active");
 
 		} else if($projectsTop <= $(window).scrollTop() + $wInnerHeight) {
-			$highlightedMenuElement.removeClass("menu-highlight");
+			$highlightedMenuElement.removeClass("active");
 			$highlightedMenuElement = $menuProjects;
-			$menuProjects.addClass("menu-highlight");
+			$menuProjects.addClass("active");
 
 		} else if($aboutTop <= $(window).scrollTop() + $wInnerHeight) {
-			$highlightedMenuElement.removeClass("menu-highlight");
+			$highlightedMenuElement.removeClass("active");
 			$highlightedMenuElement = $menuAbout;
-			$menuAbout.addClass("menu-highlight");
+			$menuAbout.addClass("active");
 
 		} else {
-			$highlightedMenuElement.removeClass("menu-highlight");
+			$highlightedMenuElement.removeClass("active");
 			$highlightedMenuElement = $menuHome;
-			$menuHome.addClass("menu-highlight");
+			$menuHome.addClass("active");
 		}
 
 	});

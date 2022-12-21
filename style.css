@@ -13,6 +13,7 @@ new palette
 //aqua green rgba(63, 210, 199, 0.3)
 */
 
+/*
 body {
 	margin: 0;
 	padding: 0;
@@ -49,7 +50,6 @@ img{
 	margin:  auto;
 }
 
-/* navbar */
 .navbar {
 	position: fixed;
 	top: 0;
@@ -88,8 +88,8 @@ img{
 }
 
 .menu-highlight{
-	border-bottom: 5px solid #fca311; /*golden orange*/
-	background-color: rgba(252, 163, 17, .6); /*golden orange rgba*/
+	border-bottom: 5px solid #fca311;
+	background-color: rgba(252, 163, 17, .6);
 }
 
 section{
@@ -103,32 +103,10 @@ section{
 
 .text-container{
 	padding: 50px;
-	background-color: #fca311; /*golden orange*/
+	background-color: #fca311;
 	display: inline-block;
 	border-radius: 10px;
 }
-
-/*legacy bg*/
-/*
-#home-bg{
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
-	opacity: 0.3;
-}
-#home-bg-filter{
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	opacity: 0.5;
-}
-*/
 
 #home-container{
 	width: 60%;	
@@ -220,4 +198,73 @@ footer{
 #footer-container{
     width: 100%;
     border-radius: 0;
+}
+*/
+
+/* color palette
+
+14213d - dark blue - background
+fcbf49 - diffused golden - secondary
+ffffff - white - text
+
+
+
+*/
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif !important;
+	color: #fff !important;
+    background-color: #14213d !important;
+}
+
+.card, .card-body, .card .list-group-item{
+    background-color: #fcbf49 !important;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+a, a:visited, a:hover, a:active{
+	color: inherit;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav.navbar{
+    background-color: #14213d !important;
+}
+
+.socials i {
+	padding: 20px;
+	font-size: 48px;
+    color: #fcbf49 !important;
+}
+
+section{
+    margin-top: 20px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    flex-wrap: wrap;
+}
+
+#about-container{
+    width: 80%;
+}
+
+#resume-image{
+	width: 80%;
+}
+
+#contact-form-image{
+    width: 80%;
 }
