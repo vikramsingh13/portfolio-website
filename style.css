@@ -227,8 +227,12 @@ a{
 	text-decoration: none !important;
 }
 
-a, a:visited, a:hover, a:active{
-	color: #fff !important;
+a, a:visited{
+	color: inherit;
+}
+
+a:active, a:hover {
+    color: #fcbf49 !important;
 }
 
 ul{
@@ -245,6 +249,10 @@ nav.navbar{
 	padding: 20px;
 	font-size: 48px;
     color: #fcbf49 !important;
+}
+
+.socials a:active, a:hover {
+    color: #fff !important;
 }
 
 section{
