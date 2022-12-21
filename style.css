@@ -228,7 +228,7 @@ a{
 }
 
 a, a:visited, a:hover, a:active{
-	color: #fff;
+	color: #fff !important;
 }
 
 ul{
