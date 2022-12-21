@@ -228,10 +228,14 @@ a{
 }
 
 a, a:visited{
-	color: inherit;
+	color: #fff;
 }
 
 a:hover, a:active {
+    color: #fcbf49 !important;
+}
+
+.active{
     color: #fcbf49 !important;
 }
 
@@ -251,7 +255,7 @@ nav.navbar{
     color: #fcbf49 !important;
 }
 
-.socials a, a:visited, a:hover, a:active {
+.card-link, .card-link:visited, .card-link:hover, .card-link:active{
     color: #fff !important;
 }
 
