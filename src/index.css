@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+html,
+body,
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+}
+
+:root{
+    --primary: #B16FDE;
+    --secondary: #6640B3;
+    --accent-orange: #E37F09;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
