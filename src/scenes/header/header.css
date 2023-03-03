@@ -1,0 +1,20 @@
+.header{
+    margin-top: 10.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.header > h1{
+    padding-top: 10rem;
+    color: var(--primary);
+}
+
+.header > h2{
+    padding-top: 2rem;
+}
+
+.header > .socials{
+    margin: 5rem;
+}

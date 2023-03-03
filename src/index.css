@@ -1,29 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
+:root{
+    --primary: #B16FDE;
+    --secondary: #6640B3;
+    --accent-orange: #E37F09;
+    --background-primary: #08075A;
+}
+
 html,
 body,
-*{
+a{
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10px;
-}
-
-:root{
-    --primary: #B16FDE;
-    --secondary: #6640B3;
-    --accent-orange: #E37F09;
-}
-
-h1, h2 {
-    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+    color: white;
+    
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.bg-gradient{
+    /*Gradient from angrytools.com/gradient using primary and bg-primary
+/* ff 3.6+ */
+    background:-moz-linear-gradient(162deg, rgba(177, 111, 222, 1) 0%, rgba(8, 7, 90, 1) 95%, rgba(8, 7, 90, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(162deg, rgba(177, 111, 222, 1) 0%, rgba(8, 7, 90, 1) 95%, rgba(8, 7, 90, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(162deg, rgba(177, 111, 222, 1) 0%, rgba(8, 7, 90, 1) 95%, rgba(8, 7, 90, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08075A', endColorstr='#B16FDE', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(162deg, rgba(177, 111, 222, 1) 0%, rgba(8, 7, 90, 1) 95%, rgba(8, 7, 90, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(162deg, rgba(177, 111, 222, 1) 0%, rgba(8, 7, 90, 1) 95%, rgba(8, 7, 90, 1) 100%);
 }
