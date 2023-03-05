@@ -7,44 +7,7 @@ nav {
     position: fixed;
     top: 0;
 
-    /*Gradient from angrytools.com/gradient using primary and secondary
-    /* ff 3.6+ */
-    background: -moz-linear-gradient(
-        144deg,
-        rgba(177, 111, 222, 1) 0%,
-        rgba(227, 127, 9, 1) 100%
-    );
-
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-linear-gradient(
-        144deg,
-        rgba(177, 111, 222, 1) 0%,
-        rgba(227, 127, 9, 1) 100%
-    );
-
-    /* opera 11.10+ */
-    background: -o-linear-gradient(
-        144deg,
-        rgba(177, 111, 222, 1) 0%,
-        rgba(227, 127, 9, 1) 100%
-    );
-
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E37F09', endColorstr='#B16FDE', GradientType=1 );
-
-    /* ie 10+ */
-    background: -ms-linear-gradient(
-        144deg,
-        rgba(177, 111, 222, 1) 0%,
-        rgba(227, 127, 9, 1) 100%
-    );
-
-    /* global 94%+ browsers support */
-    background: linear-gradient(
-        144deg,
-        rgba(177, 111, 222, 1) 0%,
-        rgba(227, 127, 9, 1) 100%
-    );
+    
 }
 
 nav > .logo {

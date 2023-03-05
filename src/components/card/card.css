@@ -1,0 +1,23 @@
+.card {
+    padding: 5rem;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-image{
+    height: 50rem;
+    width: 30rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: -.2rem;
+}
+
+.card-content{
+}
+
+.card-content-line-break{
+    color: white;
+    max-width: 50%;
+}
