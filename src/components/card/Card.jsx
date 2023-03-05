@@ -21,14 +21,12 @@ const Card = ({
 
     return (
         <div className="card">
-            <div>
-                <img
-                    className="card-image"
-                    src={`images/${appImage}`}
-                    alt={`${appName} image`}
-                    title={`${appName} image`}
-                />
-            </div>
+            <img
+                className="card-image"
+                src={`images/${appImage}`}
+                alt={`${appName} image`}
+                title={`${appName} image`}
+            />
             <div className="card-content bg-gradient-secondary">
                 <div className="card-title">
                     <h1>{appName}</h1>
@@ -41,8 +39,8 @@ const Card = ({
                 <div className="card-description">{descriptionArray}</div>
                 {lineBreak}
                 <div className="card-links">
-                    <SocialIcon live link={appLiveLink} newtab/>
-                    <SocialIcon github link={appCodeLink} newtab/>
+                    <SocialIcon live link={appLiveLink} newtab />
+                    <SocialIcon github link={appCodeLink} newtab />
                 </div>
             </div>
         </div>
