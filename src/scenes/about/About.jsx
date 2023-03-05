@@ -15,7 +15,7 @@ const About = () => {
                 furthering my education in Machine Learning.
             </h2>
             <div>
-                <Button text="Projects" />
+                <Button text="Projects" link="#projects"/>
             </div>
         </div>
     );

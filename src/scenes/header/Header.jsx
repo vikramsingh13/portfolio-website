@@ -17,7 +17,7 @@ const Header = () => {
                 
             </div>
             <div>
-                <Button text={"About"} />
+                <Button text={"About"} link="#about" />
                 <Button text={"Resume"} />
             </div>
         </div>
