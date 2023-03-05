@@ -5,6 +5,8 @@
     --secondary: #6640B3;
     --accent-orange: #E37F09;
     --background-primary: #08075A;
+    --font-primary: 'Josefin Sans', sans-serif;
+    --font-secondary: 'Quicksand', sans-serif;
 }
 
 html,
@@ -13,7 +15,7 @@ a{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font-primary);
     font-size: 10px;
     cursor: default;
     color: white;
@@ -22,7 +24,7 @@ a{
 
 h1 {
     font-size: 3.5rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-secondary);
 }
 
 h2 {

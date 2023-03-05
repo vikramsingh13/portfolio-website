@@ -1,4 +1,9 @@
 .about{
     padding: 20rem;
+    text-align: center;
     
+}
+
+.about .span-name{
+    color: var(--primary);
 }

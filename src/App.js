@@ -3,6 +3,7 @@ import './app.css';
 import Header from "./scenes/header/Header";
 import Navbar from "./scenes/public/navbar/Navbar";
 import About from "./scenes/about/About";
+import Contact from "./scenes/contact/Contact";
 import { LinksContext } from "./contexts/LinksContext";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Navbar />
                 <Header />
                 <About />
+                <Contact />
             </div>
         </LinksContext.Provider>
     );
