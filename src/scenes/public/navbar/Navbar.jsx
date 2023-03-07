@@ -1,7 +1,10 @@
 import React from "react";
 import "./navbar.css";
+import { useContext } from "react";
+import { LinksContext } from "../../../contexts/LinksContext";
 
 const Navbar = () => {
+    const resumeLink = useContext(LinksContext)
     return (
         <nav className="bg-gradient">
             <div className="logo">
@@ -19,7 +22,7 @@ const Navbar = () => {
                         <a href="#contact">Contact</a>
                     </li>
                     <li className="menu-item">
-                        <a href="#">Resume</a>
+                        <a href={resumeLink["resume"]} target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>
